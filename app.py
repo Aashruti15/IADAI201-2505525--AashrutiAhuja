@@ -190,7 +190,7 @@ def main():
         col1, col2 = st.columns([2, 1])
 
         with col1:
-            st.image(annotated_rgb, caption="Detected Parking Slots", use_container_width=True)
+            st.image(annotated_rgb, caption="Detected Parking Slots", use_column_width=True)
 
             # Downloadable annotated image
             success, encoded_img = cv2.imencode(".png", annotated_bgr)
